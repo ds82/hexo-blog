@@ -3,12 +3,19 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: Hexo
+title: blog.dennis.io
 subtitle:
 description:
 author: Dennis Sänger
 email: blog@ds82.de
 language:
+
+deploy:
+  type: rsync
+  host: fizz.rift.lan
+  user: dennis
+  root: /home/www/dennis.io/blog.dennis.io
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -35,6 +42,7 @@ multi_thread: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
+
 highlight:
   enable: true
   line_number: true
@@ -84,7 +92,3 @@ disqus_shortname:
 theme: ewal
 exclude_generator:
 
-# Deployment
-## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type:
