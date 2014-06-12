@@ -1,0 +1,3 @@
+[submodule "themes/ewal"]
+	path = themes/ewal
+	url = git@github.com:ds82/hexo-theme-ewal.git
